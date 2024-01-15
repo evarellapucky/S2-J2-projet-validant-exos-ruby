@@ -3,7 +3,8 @@
 # "jean.dupont.02@email.fr"
 # etc..
 
+name = jean<
+
 fake_emails []
 
 50.times do 
-  
