@@ -3,8 +3,10 @@
 # "jean.dupont.02@email.fr"
 # etc..
 
-name = jean<
+mails = Array.new
 
-fake_emails []
-
-50.times do 
+50.times do |j|
+  newmail = "jean.dupont.%02d@email.fr" %[j+1]
+  puts "#{newmail}"
+  mails << newmail
+end
