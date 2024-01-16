@@ -3,8 +3,8 @@
 
 puts "Choisis un nombre"
 
-my_nb = gets.chomp.to_i - 1
+my_nb = gets.chomp.to_i
 
-my_nb.times do
+(my_nb-1).times do
   puts "Bonjour, toi !"
 end

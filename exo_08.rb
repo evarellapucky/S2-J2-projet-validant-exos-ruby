@@ -7,6 +7,6 @@ number = gets.chomp.to_i
 puts "c'est parti, on compte"
 sleep(1)
 
-(number+1).times do |countdown|
-  puts "#{number - countdown}"
+(number+1).times do |i|
+  puts "#{number - i}"
 end

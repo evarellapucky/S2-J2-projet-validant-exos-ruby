@@ -7,6 +7,6 @@ birth_year = gets.chomp.to_i
 year = Time.now.year
 nb_year = year - birth_year
 
-(nb_year+1).times do |count|
-  puts " En #{birth_year + count}, tu avais #{count} ans"
+(nb_year+1).times do |i|
+  puts " En #{birth_year + i}, tu avais #{i} ans"
 end
