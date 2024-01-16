@@ -3,10 +3,13 @@
 # "jean.dupont.02@email.fr"
 # etc..
 
-mails = Array.new
+emails = []
 
-50.times do |j|
-  newmail = "jean.dupont.%02d@email.fr" %[j+1]
-  puts "#{newmail}"
-  mails << newmail
+50.times do |i|
+  number = format('%02d', i + 1)
+  mail = "jean.dupont.#{number}@email.fr"
+  emails << mail
 end
+
+puts "Liste emails"
+puts emails

@@ -3,27 +3,16 @@
 #"jean.dupont.04@email.fr"
 #etc..
 
-mails = Array.new
+emails = []
 
 50.times do |i|
-  newmail = "jean.dupont.%02d@email.fr" %[i+1]
-  puts "#{newmail}"
-  mails << newmail
+  number = format('%02d', i + 1)
+  mail = "jean.dupont.#{number}@email.fr"
+  emails << mail
 end
 
-puts "voici les emails pairs"
-
-# .each permet de dire que l'on veut parcourir tout l'array 
-mails.each do |email|
-# scan de tous les mails
- number = email.scan(/\d+/).first.to_i
- if number.even?
-  puts email
- end
+emails.each_with_index do |email, index|
+  if (index + 1).even?
+    puts email
+  end
 end
-
-# voir avec mails = Array.new
-#50.times do [i]
-# number = i+1
-#newmail = "jean.dupont.#{number}@email.fr"
-#puts "#{newmail}"

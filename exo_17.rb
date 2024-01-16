@@ -8,3 +8,18 @@
  #######
 #########
 
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+
+number = gets.chomp.to_i
+
+if number <= 25
+  puts "Voici la pyramide :"
+  number.times do |i|
+    space = " " * (number - i - 1)
+    hashtag = "#" * (i +1)
+  print "#{space}#{hashtag}"
+  puts "#" * i
+  end
+else  
+  puts "Votre nombre doit être compris entre 1 et 25"
+end
