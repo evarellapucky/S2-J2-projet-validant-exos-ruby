@@ -13,5 +13,3 @@ age.times do |count|
     puts "Il y a #{y} ans tu avais la moitié de l'âge que tu as aujourd'hui"
   end
 end
-
-# problème de fonctionnement avec les nombres impairs
