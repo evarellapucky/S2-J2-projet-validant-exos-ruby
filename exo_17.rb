@@ -9,10 +9,12 @@
 #########
 
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
-
 number = gets.chomp.to_i
+  while number < 1 or number > 25
+    puts "Ton chiffre doit être compris entre 1 et 25"
+    number = gets.chomp.to_i
+  end
 
-if number <= 25
   puts "Voici la pyramide :"
   number.times do |i|
     space = " " * (number - i - 1)
@@ -20,6 +22,4 @@ if number <= 25
   print "#{space}#{hashtag}"
   puts "#" * i
   end
-else  
-  puts "Votre nombre doit être compris entre 1 et 25"
-end
+
